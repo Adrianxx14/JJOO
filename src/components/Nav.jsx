@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Button from './Button'
 import icono from '../assets/img/icono.jpg'
 
@@ -10,8 +11,8 @@ const Nav = () => {
             <div>
                 <img src={icono} alt="" style={{width:"100px", height:"70px"}} />
             </div>
-            <Button title="Juegos Olimpicos" className="btn btn-md  m-1"/>
-            <Button title="Atletas" className="btn btn-md  m-1"/>
+            <Button title="Juegos Olimpicos" className="btn btn-md  m-1" routeL={"/"}/>
+            <Button title="Atletas" className="btn btn-md  m-1" routeL={"/atletas"}/>
             <Button title="Deportes" className="btn btn-md  m-1"/>
             <Button title="Noticias" className="btn btn-md  m-1"/>
             <Button title="Olympic Channel" className="btn btn-md  m-1"/>
